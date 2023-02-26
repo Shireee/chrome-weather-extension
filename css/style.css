@@ -1,0 +1,65 @@
+body{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    color: black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.sun__rise-img{
+    width: 30px;
+    height: 30px;
+}
+
+.sun__set-img{
+    width: 33px;
+    height: 33px;
+}
+
+.sun{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.sun__rise, .sun__set{
+   display: inherit;
+   align-items: center;
+}
+.sun__rise-text, .sun__set-text{
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+.location{
+    font-size: 25px;
+    line-height: 10px;
+}
+
+.temperature-humidity{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.temperature-humidity__temperature-text::after{
+    content: ' *C';
+}
+.temperature-humidity__humidity-text{
+    padding-left: 20px;
+}
+.temperature-humidity__humidity-text::after{
+    content: '%';
+}
+.temperature-humidity__humidity-text::before{
+    content: 'humidity: ';
+}
+.description__image{
+    padding-right: 4px;
+}
+.description{
+    line-height: 4px;
+    padding-right: 7px;
+}

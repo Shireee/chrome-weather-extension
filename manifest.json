@@ -7,9 +7,9 @@
 
     "description": "Simple weather extension",
     "icons": {
-        "16": "cloud-16.png",
-        "32": "cloud-32.png",
-        "128": "cloud-128.png"
+        "16": "images/cloud-16.png",
+        "32": "images/cloud-32.png",
+        "128": "images/cloud-128.png"
     },
     "action": {
         "default_popup": "./popup.html"

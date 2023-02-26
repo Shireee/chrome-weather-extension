@@ -1,6 +1,4 @@
-const API_KEY = "0afc0fad162c34e71e3344f0846d5cc7"
-let latitude =  "47.2357"
-let longitude = "39.7015"
+const API_KEY = "0afc0fad162c34e71e3344f0846d5cc7" // visit openWeather to get your own API key 
 
 window.onload = function () {
 
@@ -9,13 +7,13 @@ window.onload = function () {
 
         geo = position
 
-        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${geo.coords.latitude}&lon=${geo.coords.longitude}&units=metric&appid=0afc0fad162c34e71e3344f0846d5cc7`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${geo.coords.latitude}&lon=${geo.coords.longitude}&units=metric&appid=${API_KEY}`)
         .then((data) => data.json())
         .then((jsonData) => {
             fetch(`http://openweathermap.org/img/wn/${jsonData.weather[0].icon}@2x.png`)
             .then((res) => res.blob())
             .then((result) => {  
-                
+
             let sun_rise = new Date(jsonData.sys.sunrise * 1000)
             let sun_set = new Date(jsonData.sys.sunset * 1000)
     

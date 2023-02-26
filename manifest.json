@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "weather",
+    "version": "1.0.1",
+
+    "author": "kirog11az@gmail.com",
+
+    "description": "Simple weather extension",
+    "icons": {
+        "16": "cloud-16.png",
+        "32": "cloud-32.png",
+        "128": "cloud-128.png"
+    },
+    "action": {
+        "default_popup": "./popup.html"
+    }
+}

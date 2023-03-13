@@ -1,4 +1,4 @@
-const API_KEY = "0afc0fad162c34e71e3344f0846d5cc7" // visit openWeather to get your own API key 
+const API_KEY = "key" // visit openWeather to get your own API key 
 
 window.onload = function () {
 
